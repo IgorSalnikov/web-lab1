@@ -14,7 +14,7 @@ header, section {
 }
 
 .my_photo {
-   width: 20%;
+   max-width: 20%;
 }
 
 a:link {
@@ -52,8 +52,80 @@ a:visited{
 .h2_other{
     text-align: center;
 }
-.profession_photo{
-    display: flex;
-    
-    flex-direction: row;
+@media (max-width: 768px) {
+    .my_photo {
+        max-width: 25%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .my_photo {
+        
+        max-width: 30%; 
+    }
+}
+@media (max-width: 768px) {
+    .my_photos1 {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .my_photos2 {
+        max-width: 80%; 
+        display: flex;
+        flex-direction: column; 
+    }
+    .my_photos3 {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .my_photos1 {
+        max-width: 60%; 
+        display: flex;
+        flex-direction: column; 
+    }
+    .my_photos2 {
+        max-width: 60%; 
+        display: flex;
+        flex-direction: column; 
+    }
+    .my_photos3 {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;  
+    }
+}
+@media(max-width: 768px){
+    .zvo_header{
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;  
+    }
+}
+@media(max-width: 1024px){
+    .zvo_header{
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;  
+    }
+}
+@media(max-width: 768px){
+    #prof_img{
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;  
+    }
+}
+@media(max-width: 1024px){
+    #prof_img{
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;  
+    }
 }
